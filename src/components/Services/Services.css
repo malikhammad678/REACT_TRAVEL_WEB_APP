@@ -1,0 +1,106 @@
+.hero_services {
+    background: url("../../assets/1.jpg"),rgba(0,0,0,.3);
+    background-blend-mode: color;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+h3 {
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 0 .5rem 1rem rgba(0,0,0,.4);
+}
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #222;
+    font-weight: 600;
+    padding-top: 2rem;
+  }
+  .sub_heading {
+      text-align: center;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      color: #222;
+      padding-bottom: 2rem;
+  }
+
+  .box_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.box_container .box {
+    width: 30%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    overflow:hidden;
+    border-radius: 10px;
+    transition: .5s;
+}
+.box_container .box:hover {
+    transform: translateY(-3%);
+}
+.box_container .box img {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+
+}
+
+.box_container .box .content {
+   padding: 1rem;
+}
+.box_container .box .content h3 {
+    font-size: 1.5rem;
+    color: #222;
+}
+.box_container .box .content p {
+    color:grey;
+    font-weight: 400;
+    margin: .5rem 0;
+    line-height: 1.5;
+}
+.box_container .box .content .btn {
+    padding: .7rem 2rem;
+    background-color: red;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    text-decoration: none;  
+    transition: .5s; 
+}
+.box_container .box .content .btn:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+@media (max-width:961px) {
+    h3 {
+        font-size: 4rem;
+    }
+    .box_container {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    .box_container .box {
+        width: 100%;
+    }
+}
+
+@media (max-width:600px)
+{
+    .h3 {
+        font-size: .5rem;
+    }
+}

@@ -1,0 +1,105 @@
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+.contact_hero {
+    background: url("../../assets/11.jpg"),rgba(0,0,0,.6);
+    height: 100vh;
+    background-blend-mode: color;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.contact_hero h1 {
+    font-size: 5rem;
+    text-shadow: 0 .5rem 1rem rgba(0,0,0,.4);
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+.contact .form {
+    width: 600px;
+    padding: 1rem;
+}
+.contact .form input {
+    width: 100%;
+    margin: 1rem 0;
+    padding: .7rem .7rem;
+    font-size: .9rem;
+    border: 1px solid grey;
+    outline: none;
+}
+.contact .form input:focus-within {
+    border-color: red;
+}
+.contact .form textarea {
+    width: 100%;
+    margin: 1rem 0;
+    padding: .7rem .7rem;
+    font-size: .9rem;
+    border: 1px solid grey;
+    outline: none;
+    height: 150px;
+    resize: none;
+}
+.contact .form textarea:focus-within {
+    border-color: red;
+}
+.contact h1 {
+    font-size: 2rem;
+    color: #333;
+
+}
+.btn{
+    padding: .7rem 2rem;
+    background-color: red;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-top: .7rem;
+    text-decoration: none;  
+    transition: .5s; 
+    width: 100%;
+    text-align: center;
+}
+.btn:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+@media (max-width:768px){
+    .contact {
+        padding: 0 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact_hero h1  {
+        font-size: 2rem;
+    }
+    .contact .form input,textarea  {
+        width: 100%;
+    }
+    .contact .form textarea {
+        width: 100%;
+    }
+    .btn {
+        width: 100%;
+    }
+    .contact .form {
+        width: 350px;
+        padding: 1rem;
+    }
+}

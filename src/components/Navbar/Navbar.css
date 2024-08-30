@@ -1,0 +1,116 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    box-shadow:  0 5px 15px 0 rgba(0,0,0,.2);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    background-color: #fff;
+}
+.navBar h1 {
+    color: #222;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.navBar .nav_menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.navBar .nav_menu li {
+    list-style: none;
+    font-size: 1.05rem;
+    cursor: pointer;
+    color: #222;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 0.5rem 1rem;
+    transition: .3s ease;
+    border-radius: 10px;
+}
+
+.navBar .nav_menu li:hover {
+    color: #fff;
+    background-color: #01959a;
+
+}
+.navBar .nav_menu .sign:hover {
+   background-color: #222;
+   color: #fff;
+}
+.nav_icon {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+@media (max-width:1220px){
+    .navBar{
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 961px) {
+    .nav_icon {
+        display: block;
+    }
+    .nav_menu {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 500px;
+        box-shadow: 0 5px 15px 0 rgba(0,0,0,.2);
+        flex-direction: column;
+        padding-top: 6rem;
+        transition: .3s;
+        transform: translateY(-200%);
+        background-color: #fff;
+        border-radius: 10px;
+        z-index: 99999;
+    }
+    .responsive_menu {
+        transform: none;
+    }
+    .nav_menu li {
+        display: block;
+        margin: 5px 0;
+    }
+    .nav_close_icon {
+        position: absolute;
+        top: 2rem;
+        right: 3rem;
+        padding: .8rem 1rem;
+        background-color: #222;
+        color: #fff;
+        border-radius: 50%;
+    }
+    .navBar .nav_menu li {
+        width: 100%;
+    } 
+    .navBar{
+        padding: 0 40px;
+    }
+    
+}
+@media (max-width:480px){
+    .nav_close_icon {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        padding: .8rem 1rem;
+        background-color: #222;
+        color: #fff;
+        border-radius: 50%;
+        font-size: 1.3rem;
+    }
+    .navBar{
+        padding: 0 20px;
+    }
+}

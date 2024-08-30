@@ -1,0 +1,51 @@
+.signUp_hero {
+    background: url("../../assets/img.jpg") rgba(0,0,0,.4);
+    background-blend-mode: color;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signUp_hero h1 {
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 0 .5rem 1rem rgba(0,0,0,.4);
+}
+.signup {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 2rem;
+}
+.signup form {
+    width: 48%;
+}
+.signup form input {
+    width: 100%;
+    padding: .7rem .7rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    border: 1px solid rgba(0,0,0,.4);
+    outline: none;
+}
+.signup .img {
+    width: 40%;
+    border-radius: 20rem 0 20rem 0;
+}
+
+@media (max-width:768px){
+    .signup {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .signup form {
+        width: 100%;
+    }
+    .signup .img {
+        width: 100%;
+    }
+}
